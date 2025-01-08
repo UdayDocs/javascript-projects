@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="hero-image">
+            <div class="logo-bar">
+                <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+                    alt="The Odin Project logo" srcset="">
+                <h1>ODIN</h1>
+            </div>
+        </div>
+
+        <main>
+            <div class="container">
+                <h2>Sign Up</h2>
+                <form class="form" action="https://httpbin.org/post" method="post">
+                    <input type="email" placeholder="Email" required>
+
+            <div class="input-wrapper">
+                    <input id="pwd" type="password" class="form-control" placeholder="Password" required>
+                    <span toggle="#pwd" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+            </div>
+            <div class="input-wrapper">
+                    <input id="confirm-password" type="password" class="form-control" placeholder="Confirm Password"
+                        required>
+                    <span toggle="#confirm-password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+            </div>
+          <ul class="message" id="pwd-requirements">
+            <li id="letter" class="req-item">A lowercase letter</li>
+            <li id="capital" class="req-item">A capital (uppercase) letter</li>
+            <li id="number" class="req-item">A number</li>
+            <li id="length" class="req-item">Minimum 8 characters</li>
+            <li id="samePwd" class="req-item">Password should be same</li>
+          </ul>
+                    <button class="submit" type="submit">Sign Up</button>
+
+                    <div class="Sign-in">
+                        <p>Already have a profile? <a href="#">Log in</a></p>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+
+
+</body>
+
+</html>
