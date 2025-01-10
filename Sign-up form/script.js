@@ -49,13 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       
        checkPasswordMatch();
-      // if (pwdInput.value === confirmPwdInput.value) {
-      //   samePwd.classList.remove("invalid");
-      //   samePwd.classList.add("valid");
-      // } else {
-      //   samePwd.classList.remove("valid");
-      //   samePwd.classList.add("invalid");
-      // }
     });
   
   
@@ -73,23 +66,6 @@ document.addEventListener("DOMContentLoaded", function () {
     samePwd.classList.add("invalid");
   }
 }
-  
-//   let timeout;
-// confirmPwdInput.addEventListener("keyup", function () { 
-//   clearTimeout(timeout);
-
-//   timeout = setTimeout(() => {
-//     if (pwdInput.value === confirmPwdInput.value) {
-//       submitBtn.disabled = false;
-//       confirmPwdInput.setCustomValidity('');
-//     } else {
-//       confirmPwdInput.setCustomValidity('Passwords don\'t match.');
-//       confirmPwdInput.reportValidity();
-//       submitBtn.disabled = true;
-//     }
-//   }, 500);
-// });
-  
   
 
     // jQuery for Toggle Password Visibility
